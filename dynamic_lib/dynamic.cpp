@@ -11,3 +11,8 @@ int add(int a, int b){
 int minus(int a, int b) {
     return a-b;
 }
+
+long multiply(int a, int b) {
+    return a*b;
+}
+

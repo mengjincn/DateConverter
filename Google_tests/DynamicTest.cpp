@@ -12,3 +12,7 @@ TEST(Dynamic_lib, add){ // 3==1+2
 TEST(Dynamic_lib, minus){ // 102=203-101
     EXPECT_EQ(102, add(203,-101));
 }
+
+TEST(Dynamic_lib, multiply){
+    EXPECT_EQ(1000, multiply(125,8));
+}
