@@ -5,10 +5,7 @@
 #ifndef TESTING_TEST_DYNAMIC_H
 #define TESTING_TEST_DYNAMIC_H
 
+int add(int a, int b);
 
-class dynamic {
-
-};
-
-
+int minus(int a, int b);
 #endif //TESTING_TEST_DYNAMIC_H

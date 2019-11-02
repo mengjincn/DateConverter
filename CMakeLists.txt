@@ -9,5 +9,11 @@ add_executable(DateConverter_run ${SOURCE_FILES})
 include_directories(DateConverter_lib)
 add_subdirectory(DateConverter_lib)
 
-target_link_libraries(DateConverter_run DateConverter_lib)
 
+include_directories(dynamic_lib)
+add_subdirectory(dynamic_lib)
+
+target_link_libraries(DateConverter_run DateConverter_lib)
+target_link_libraries(DateConverter_run dynamic_lib)
+
+add_subdirectory(Google_tests)

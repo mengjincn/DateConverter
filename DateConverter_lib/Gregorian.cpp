@@ -27,7 +27,7 @@ int GregorianDate::LastMonthDay(int month, int year)
     case 11:
         return 30;
     default:
-        return 31;
+        return MAX_MONTH_LENGTH;
     }
 }
 
