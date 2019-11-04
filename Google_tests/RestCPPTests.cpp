@@ -5,6 +5,7 @@
 #include "gtest/gtest.h"
 #include <cpprest/http_client.h>
 #include <cpprest/filestream.h>
+#include <boost/lexical_cast.hpp>
 
 using namespace utility;                    // Common utilities like string conversions
 using namespace web;                        // Common features like URIs.
@@ -48,4 +49,14 @@ TEST(RestCPP, first) {
         printf("Error exception:%s\n", e.what());
     }
 
+}
+
+TEST(Boost, lexical){
+    using boost::lexical_cast;
+    int a = boost::lexical_cast<int>("123456");
+    std::cout << a << std::endl;
+    double b = boost::lexical_cast<double>("123.12");
+    std::cout << b << std::endl;
+    long double c = lexical_cast<long double>("123.11");
+    std::cout << c << std::endl;
 }
